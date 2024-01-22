@@ -32,6 +32,7 @@ const Navbar = () => {
         >
           <div className="flex justify-center items-center">
             <img className="w-14 md:w-16 lg:w-14" src={logo} alt="" />
+            <p className="text-white">Hunter</p>
           </div>
         </Link>
       </div>
@@ -45,7 +46,9 @@ const Navbar = () => {
             to="/"
             onClick={() => setNavToggle(!navToggle)}
             className={({ isActive }) =>
-              isActive ? "underline text-slate-100" : "text-slate-100 dark:text-slate-100"
+              isActive
+                ? "underline text-slate-100"
+                : "text-slate-100 dark:text-slate-100"
             }
           >
             <p className="text-lg lg:text-base 2xl:text-lg font-medium hover:duration-500">
@@ -56,7 +59,9 @@ const Navbar = () => {
             to="/houses"
             onClick={() => setNavToggle(!navToggle)}
             className={({ isActive }) =>
-              isActive ? "underline text-slate-100" : "text-slate-100 dark:text-slate-100"
+              isActive
+                ? "underline text-slate-100"
+                : "text-slate-100 dark:text-slate-100"
             }
           >
             <p className="text-lg lg:text-base 2xl:text-lg font-medium hover:duration-500">
@@ -68,7 +73,9 @@ const Navbar = () => {
             to="/about"
             onClick={() => setNavToggle(!navToggle)}
             className={({ isActive }) =>
-              isActive ? "underline text-slate-100" : "text-slate-100 dark:text-slate-100"
+              isActive
+                ? "underline text-slate-100"
+                : "text-slate-100 dark:text-slate-100"
             }
           >
             <p className="text-lg lg:text-base 2xl:text-lg font-medium hover:duration-500">
