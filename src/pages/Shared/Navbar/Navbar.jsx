@@ -1,9 +1,11 @@
 import React from "react";
+import logo from "../../../assets/house-hunter-logo.png";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-[#8e6e53]">
+    <div className="navbar bg-[#b6733d]">
       <div className="flex-1">
+        <img className="h-14 w-14" src={logo} alt="" />
         <a className="btn btn-ghost text-xl">daisyUI</a>
       </div>
       <div className="flex-none gap-2">
