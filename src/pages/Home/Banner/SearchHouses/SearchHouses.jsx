@@ -12,8 +12,9 @@ const SearchHouses = ({ onSearch }) => {
   });
 
   const handleSearch = () => {
-    // You can perform search operations here with searchTerm and filters
-    onSearch({ searchTerm, filters });
+    console.log("Search Term:", searchTerm);
+    console.log("Filters:", filters);
+
   };
 
   const handleInputChange = (e) => {
@@ -29,7 +30,7 @@ const SearchHouses = ({ onSearch }) => {
       <div className="flex flex-col items-center justify-between bg-white rounded-md p-4 shadow-md space-y-2 dark:bg-slate-800 dark:text-white">
         <input
           type="text"
-          placeholder="Search by city, bedrooms, bathrooms..."
+          placeholder="Search Houses..."
           className="w-full px-4 py-2 mb-4 sm:mb-0 sm:mr-2 border rounded-md focus:outline-none focus:[#5ca078] dark:bg-slate-800 dark:text-white"
           onChange={(e) => setSearchTerm(e.target.value)}
         />
@@ -81,8 +82,8 @@ const SearchHouses = ({ onSearch }) => {
           <input
             type="range"
             name="rentRange"
-            min="500"
-            max="5000"
+            min="1000"
+            max="15000"
             step="100"
             value={filters.rentRange}
             className="mt-1 w-full sm:w-auto dark:bg-slate-800 dark:text-white"
