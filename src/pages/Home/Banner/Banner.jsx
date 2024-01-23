@@ -13,6 +13,7 @@ const Banner = () => {
             Target and Attract Your Ideal Customers Effectively with Our
             Powerful Tool.
           </p>
+          {/* Search Box */}
           <SearchHouses />
         </div>
         <div className="relative">

@@ -8,7 +8,7 @@ import "./FindByRoomSize.css";
 const FindByRoomSize = () => {
     const [allHouses, setAllHouses] = useState([]);
     const [roomSizes, setRoomSizes] = useState([]);
-    const [tab, setTab] = useState("Large");
+    const [tab, setTab] = useState("Small");
 
     useEffect(() => {
         fetch("/houses.json")
@@ -36,9 +36,9 @@ const FindByRoomSize = () => {
           <TabList className="custom-tab-list">
             <Tab
               className="custom-tab dark:text-slate-300"
-              onClick={() => setTab("Large")}
+              onClick={() => setTab("Small")}
             >
-              Large
+              Small
             </Tab>
             <Tab
               className="custom-tab dark:text-slate-300"
@@ -48,9 +48,9 @@ const FindByRoomSize = () => {
             </Tab>
             <Tab
               className="custom-tab dark:text-slate-300"
-              onClick={() => setTab("Extra Large")}
+              onClick={() => setTab("Large")}
             >
-              Extra Large
+              Large
             </Tab>
           </TabList>
         </Tabs>

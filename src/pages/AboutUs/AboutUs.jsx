@@ -44,7 +44,7 @@ const AboutUs = () => {
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
           Welcome to House Hunter
         </h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-slate-600 mb-6 dark:text-slate-300">
           House Hunter is a delightful platform that simplifies the house rental
           process. It serves as a connecting bridge between house owners, who
           wish to rent out their properties, and house renters, who are seeking

@@ -1,5 +1,6 @@
 // src/components/UnifiedSearchBar.js
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const SearchHouses = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -10,11 +11,12 @@ const SearchHouses = ({ onSearch }) => {
     roomSize: "",
     rentRange: 2500, // default value
   });
+  const navigate = useNavigate();
 
   const handleSearch = () => {
     console.log("Search Term:", searchTerm);
     console.log("Filters:", filters);
-
+    navigate("/searchResult");
   };
 
   const handleInputChange = (e) => {

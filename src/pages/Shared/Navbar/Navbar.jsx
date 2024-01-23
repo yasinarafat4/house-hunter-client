@@ -103,20 +103,19 @@ const Navbar = () => {
             tabIndex={0}
             className="dark:bg-slate-700 dark:text-white menu-compact dropdown-content menu rounded-box mt-3 w-52 bg-base-300 p-2 shadow"
           >
-            <li className="mb-2 mt-1 text-center font-semibold">User</li>
+            <li className="mb-2 mt-1 text-center font-semibold">User Name</li>
             <div className="divider my-0"></div>
-            <li className="mb-2">
-              <Link
-                to="/userProfile"
-                className="text-lg"
-                activeClassName="text-blue-500"
-              >
-                Profile
-              </Link>
-            </li>
+            <li>
+                <button
+                  // onClick={handleLogOut}
+                  className="btn btn-warning hover:bg-yellow-500 content-center text-white dark:hover:text-slate-200"
+                >
+                  Logout
+                </button>
+              </li>
           </ul>
         </div>
-        <Link to="/">
+        <Link to="/login">
           <button className="bg-[#5ca078] hover:bg-[#66b185] text-white px-4 py-2 text-sm md:text-base font-semibold md:px-5 lg:mx-4 my-4 lg:my-0 duration-500 rounded-full">
             Login
           </button>
