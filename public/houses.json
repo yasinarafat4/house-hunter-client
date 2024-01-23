@@ -72,7 +72,7 @@
     "availabilityDate": "2024-03-05",
     "rentPerMonth": 3500,
     "phoneNumber": "+8801762878926",
-    "description": "Luxurious villa with breathtaking ocean views."
+    "description": "Experience the ultimate luxury in this stunning villa that offers awe-inspiring views of the ocean."
   },
   {
     "_id": "6",
@@ -117,7 +117,7 @@
     "availabilityDate": "2024-02-18",
     "rentPerMonth": 2800,
     "phoneNumber": "+8801952668929",
-    "description": "Serene retreat with stunning lake views."
+    "description": "Experience a calming retreat with picturesque lake views that leave you feeling refreshed."
   },
   {
     "_id": "9",
@@ -177,6 +177,6 @@
     "availabilityDate": "2024-04-05",
     "rentPerMonth": 5000,
     "phoneNumber": "+8801752678929",
-    "description": "Indulge in luxury with this 6-bedroom Elegant Mansion located in Royal City. This regal residence boasts opulent features and grandeur at every corner."
+    "description": "Indulge in luxury with residence boasts opulent features and grandeur at every corner."
   }
 ]
