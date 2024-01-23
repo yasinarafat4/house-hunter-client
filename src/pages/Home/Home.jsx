@@ -1,12 +1,12 @@
 import React from "react";
 import Banner from "./Banner/Banner";
-import PopulerHouses from "./PopulerHouses/PopulerHouses";
+import PopularHouses from "./PopularHouses/PopularHouses";
 
 const Home = () => {
   return (
     <>
       <Banner />
-      <PopulerHouses />
+      <PopularHouses />
     </>
   );
 };
