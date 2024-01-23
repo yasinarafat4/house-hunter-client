@@ -6,21 +6,16 @@ import CategoryCard from "../../Shared/HouseCard/CategoryCard";
 import "./FindByRoomSize.css";
 
 const FindByRoomSize = () => {
-    const [allHouses, setAllHouses] = useState([]);
-    const [roomSizes, setRoomSizes] = useState([]);
-    const [tab, setTab] = useState("Small");
+  const [roomSizes, setRoomSizes] = useState([]);
+  const [tab, setTab] = useState("Small");
 
-    useEffect(() => {
-        fetch("/houses.json")
-          .then((res) => res.json())
-          .then((data) => {
-            setAllHouses(data);
-    
-            const filteredRoomSizes = data.filter((house) => house.roomSize === tab);
-            setRoomSizes(filteredRoomSizes);
-          });
-      }, [tab]);
-    
+  useEffect(() => {
+    fetch(`http://localhost:5000/houses/${tab}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setRoomSizes(data);
+      });
+  }, [tab]);
 
   console.log("roomSizes", roomSizes);
   return (

@@ -85,7 +85,7 @@ const SearchHouses = ({ onSearch }) => {
             type="range"
             name="rentRange"
             min="1000"
-            max="15000"
+            max="5000"
             step="100"
             value={filters.rentRange}
             className="mt-1 w-full sm:w-auto dark:bg-slate-800 dark:text-white"

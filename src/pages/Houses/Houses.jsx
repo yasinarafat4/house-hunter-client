@@ -6,7 +6,7 @@ import HouseCard from "../Shared/HouseCard/HouseCard";
 const Houses = () => {
   const [houses, setHouses] = useState([]);
   useEffect(() => {
-    fetch("/houses.json")
+    fetch("http://localhost:5000/houses")
       .then((response) => response.json())
       .then((data) => {
         setHouses(data);
