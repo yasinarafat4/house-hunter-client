@@ -3,7 +3,7 @@ import React from 'react';
 const PopulerHouses = () => {
     return (
         <div>
-            After Deploy
+            Populer Houses
         </div>
     );
 };
