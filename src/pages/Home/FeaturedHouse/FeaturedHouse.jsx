@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./FeaturedHouse.css";
 
 const FeaturedHouse = () => {
+  const navigate = useNavigate();
   // Scroll to the top functionality
   const handleGetStarted = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/houses")
   };
 
   // Scroll to the top effect

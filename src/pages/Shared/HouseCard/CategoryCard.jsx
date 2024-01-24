@@ -1,4 +1,5 @@
 import React from "react";
+import BtnBookNow from "../../../components/BtnBookNow";
 
 const CategoryCard = ({ roomSize }) => {
   const { _id, name, picture, city, rentPerMonth } = roomSize;
@@ -7,17 +8,13 @@ const CategoryCard = ({ roomSize }) => {
       <div>
         <img className="w-full lg:h-40 rounded-md" src={picture} alt="" />
         <p className="font-bold text-sm lg:text-base mt-1">
-          Name:{" "}
-          <span className=" font-normal">{name}</span>
+          Name: <span className=" font-normal">{name}</span>
         </p>
       </div>
       <div className="space-y-3">
         <p className="font-bold text-sm lg:text-base">${rentPerMonth}</p>
         <div className="flex-grow-1 text-sm lg:text-base">{city}</div>
-
-        <button className="px-2 py-1 md:px-3 md:py-2  bg-[#5ca078] text-white dark:border rounded-md md:rounded-lg font-semibold md:text-base sm:text-sm text-[12px] hover:bg-[#5ebe86]">
-          Book House
-        </button>
+        <BtnBookNow />
       </div>
     </div>
   );
