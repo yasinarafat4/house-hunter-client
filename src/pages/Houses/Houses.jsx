@@ -7,7 +7,7 @@ import HouseCard from "../Shared/HouseCard/HouseCard";
 const Houses = () => {
   const [houses, setHouses] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/houses")
+    fetch("https://house-hunter-server-y95t279jc-yasinarafat4.vercel.app/houses")
       .then((response) => response.json())
       .then((data) => {
         setHouses(data);

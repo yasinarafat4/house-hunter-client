@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
         element: <HouseDetails />,
         loader: async ({ params }) => {
           const response = await fetch(
-            `http://localhost:5000/houses/${params.id}`
+            `https://house-hunter-server-y95t279jc-yasinarafat4.vercel.app/houses/${params.id}`
           );
           if (!response.ok) {
             throw new Error("Failed to fetch data");
