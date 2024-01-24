@@ -10,7 +10,7 @@ const FindByRoomSize = () => {
   const [tab, setTab] = useState("Small");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/houses/${tab}`)
+    fetch(`http://localhost:5000/roomSizes/${tab}`)
       .then((res) => res.json())
       .then((data) => {
         setRoomSizes(data);

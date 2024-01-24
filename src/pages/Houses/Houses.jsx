@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import housesCover from "../../assets/houses-cover.jpg";
 import PageCover from "../../components/PageCover";
 import HouseCard from "../Shared/HouseCard/HouseCard";
@@ -18,6 +19,10 @@ const Houses = () => {
 
   return (
     <div>
+       {/* Dynamic page title */}
+       <Helmet>
+        <title>hHunter | All Houses</title>
+      </Helmet>
       {/* Cover */}
       <PageCover
         bgImg={housesCover}
