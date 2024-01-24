@@ -7,7 +7,7 @@ const PopulerHouses = () => {
   const [popularHouses, setPopularHouses] = useState([]);
 
   useEffect(() => {
-    fetch("https://house-hunter-server-y95t279jc-yasinarafat4.vercel.app/houses")
+    fetch("https://house-hunter-server-pi-lemon.vercel.app/houses")
       .then((response) => response.json())
       .then((data) => {
         const filteredPopulerHouses = data.filter(

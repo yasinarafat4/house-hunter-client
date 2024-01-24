@@ -10,7 +10,7 @@ const FindByRoomSize = () => {
   const [tab, setTab] = useState("Small");
 
   useEffect(() => {
-    fetch(`https://house-hunter-server-y95t279jc-yasinarafat4.vercel.app/roomSizes/${tab}`)
+    fetch(`https://house-hunter-server-pi-lemon.vercel.app/roomSizes/${tab}`)
       .then((res) => res.json())
       .then((data) => {
         setRoomSizes(data);
